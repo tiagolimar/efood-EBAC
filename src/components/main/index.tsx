@@ -1,4 +1,4 @@
-import Cards from "../cards";
+import Cards from "../Cards";
 import MainStyles from "./style";
 
 const Main = () => (
