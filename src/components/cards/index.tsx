@@ -1,6 +1,7 @@
 import CardsStyles from "./styles";
-import sushiImage from "../../../image/sushi.png"
-import star from "../../../image/estrela.svg"
+import sushiImage from "../../../image/sushi.png";
+import star from "../../../image/estrela.svg";
+import { Link } from "react-router-dom";
 
 const Cards = () => (
     <CardsStyles>
@@ -18,7 +19,8 @@ const Cards = () => (
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, incidunt exercitationem. Dolorum asperiores quia enim, veniam dolorem sit a obcaecati possimus libero cum dolore non,
             ipsa optio mollitia perspiciatis nobis?
         </p>
-        <button>Saiba mais</button>
+
+        <Link to='/perfil'>Saiba mais</Link>
     </CardsStyles>
 )
 

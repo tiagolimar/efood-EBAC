@@ -4,9 +4,9 @@ const CardsStyles = styled.div`
     border: 1px black solid;
     max-width: 472px;
     
-
     .subtitle {
         margin: 8px;
+        padding-bottom: 16px;
         display: flex;
         justify-content: space-between;
 
@@ -27,6 +27,17 @@ const CardsStyles = styled.div`
             }
             
         }
+    }
+
+    a{
+        text-decoration: none;
+        color: #000000;
+        font-weight: 700;
+        font-size: 18px;
+        margin: 8px;
+        padding: 8px 16px;
+        background-color: #FFEBD9;
+        border-radius: 8px;
     }
 `
 
