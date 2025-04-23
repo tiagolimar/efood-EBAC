@@ -15,3 +15,5 @@ export const GlobalStyles = createGlobalStyle`
         font-family: 'Roboto';
     }
 `
+
+export { Cores } ;

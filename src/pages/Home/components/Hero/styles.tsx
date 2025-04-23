@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import image from "../../../image/fundo.png"
+import image from "../../../../../src/image/fundo.png"
 
 const StylesHero = styled.header`
     background-image: url(${image});
@@ -14,6 +14,10 @@ const StylesHero = styled.header`
         flex-direction: column;
         background-color: transparent;
         text-align: center;
+
+        a {
+            background-color: transparent;
+        }
 
         #logo {
             margin: 40px auto;

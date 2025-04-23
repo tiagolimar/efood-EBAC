@@ -1,6 +1,6 @@
 import { GlobalStyles } from "./globalStyles"
-import Hero from "./components/Hero"
-import Main from "./components/main"
+import Hero from "./pages/Home/components/Hero"
+import Main from "./pages/Home/components/Main"
 
 function App() {
 
