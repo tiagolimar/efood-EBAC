@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import StylesFooter from "./styles";
-import logo from "../../../image/logo.svg";
-import facebook from "../../../image/social-medias/facebook.svg";
-import instagram from "../../../image/social-medias/instagram.svg";
-import twitter from "../../../image/social-medias/twitter.svg";
+import logo from "../../image/logo.svg";
+import facebook from "../../image/social-medias/facebook.svg";
+import instagram from "../../image/social-medias/instagram.svg";
+import twitter from "../../image/social-medias/twitter.svg";
 
 function Footer() {
     return (

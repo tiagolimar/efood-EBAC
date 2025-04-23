@@ -15,6 +15,10 @@ const StylesHero = styled.header`
         background-color: transparent;
         text-align: center;
 
+        a {
+            background-color: transparent;
+        }
+
         #logo {
             margin: 40px auto;
             height: 57.5px;

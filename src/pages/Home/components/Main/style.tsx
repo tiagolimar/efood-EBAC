@@ -1,7 +1,6 @@
 import styled from "styled-components"
 
 const MainStyles = styled.section`
-    border: solid green 1px;
     margin: 56px auto 0;
     max-width: 1024px;
     display: flex;

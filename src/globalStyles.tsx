@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-const Cores ={
+const Cores = {
     laranjaClaro:'#FFF8F2',
     laranjaEscuro:'#E66767'
 }
@@ -15,3 +15,5 @@ export const GlobalStyles = createGlobalStyle`
         font-family: 'Roboto';
     }
 `
+
+export { Cores };

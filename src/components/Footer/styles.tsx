@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 const StylesFooter = styled.header`
     footer{
-        margin-top: 128px;
         background-color: #FFEBD9;
         padding: 32px 0;
         text-align: center;

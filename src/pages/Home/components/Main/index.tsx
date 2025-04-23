@@ -7,6 +7,8 @@ const Main = () => (
         <Cards />
         <Cards />
         <Cards />
+        <Cards />
+        <Cards />
     </MainStyles>
 )
 

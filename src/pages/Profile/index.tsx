@@ -1,5 +1,5 @@
-import Main from "../../components/Main";
-import Hero from "./../../components/Hero/index";
+import Main from "../Home/components/Main";
+import Hero from "../Home/components/Hero/index";
 
 function Profile() {
     return (
