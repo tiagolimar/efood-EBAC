@@ -1,11 +1,14 @@
 import styled from "styled-components"
 
 const MainStyles = styled.section`
-    margin: 56px auto 0;
-    max-width: 1024px;
+    margin: 64px 128px;
     display: flex;
+    gap: 32px;
     flex-wrap: wrap;
-    justify-content: space-between;
+    
+    @media (max-width: 768px) {
+        margin: 32px 64px;
+    }
 `
 
 export default MainStyles

@@ -1,75 +1,54 @@
 import styled from "styled-components";
-import { Cores } from "../../../../globalStyles";
 
 const CardsStyles = styled.div`
-    max-width: 472px;
-    margin-bottom: 64px;
-    border: 1px ${Cores.laranjaEscuro} solid;
-    background-color: white;
+    flex: 1 1 256px;
+    background-color: #E66767;
+    padding: 8px;
 
-    .card{
-        position: relative;
-    }
-
-    .card-categories{
-        position: absolute;
-        display: flex;
-        gap: 8px;
+    *{
         background-color: transparent;
-        right: 16px;
-        top: 16px;
+        color: #fff;
     }
 
-    .card-categories .categories{
-        width: fit-content;
-        padding: 4px;
-        background-color: ${Cores.laranjaEscuro};
-        color: white;
-        font-weight: normal;
-    }
-    
-    .subtitle {
-        margin: 8px;
-        padding-bottom: 16px;
-        display: flex;
-        justify-content: space-between;
+    .card-img{
+        overflow: hidden;
 
-        div {
-            width: 56px;
-            height: 24px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-            #nota {
-                font-weight: 700;
-                font-size: 18px;
-            }
-
-            img {
-                width: 21px;
-            }
-            
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     }
 
-    .description {
-        display: flex;
-        flex-direction: column;
-        padding-left: 8px;
+    .card-content{
+        h2{
+            font-size: 16px;
+            line-height: 100%;
+            margin: 8px 0;
+        }
 
         p{
-            padding-left: 4px ;
+            font-size: 14px;
+            line-height: 22px;
+            font-weight: 300;
         }
 
-        a{
-            width: fit-content;
-            padding: 4px;
-            background-color: ${Cores.laranjaEscuro};
-            color: white;
-            margin-top: 16px;
-            margin-bottom: 8px;
-            text-decoration: none;
+        button{
+            margin-top: 8px;
+            background-color: #fff;
+            color: #E66767;
+            border: none;
+            padding: 4px 0;
+            width: 100%;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+            transition: all 0.3s ease-in-out;
+
+            &:hover{
+                background-color: #bb4545;
+                color: #fff;
+            }
         }
     }
 `
