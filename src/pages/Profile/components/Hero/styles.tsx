@@ -2,37 +2,52 @@ import styled from "styled-components";
 import image from "../../../../image/fundo.png"
 
 const StylesHero = styled.header`
-    background-image: url(${image});
-    background-size: cover;  
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;  
-    height: 384px;
-
-    .heroContainer {
-        display: flex;
-        flex-direction: column;
+    *{
         background-color: transparent;
-        text-align: center;
+    }
 
-        a {
-            background-color: transparent;
+    .header-top {
+        background-image: url(${image});
+        background-size: cover;  
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 64px 128px;
+        height: 50px;
+    }
+
+    .header-bottom{
+        height: 256px;
+        position: relative;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.5);
         }
 
-        #logo {
-            margin: 40px auto;
-            height: 57.5px;
-            width: 125px;
-        }
-        
-        #text {
-            margin: 40px auto;
-            text-align: center;
-            width: 539px;
-            height: 84px;
-            font-weight: 900;
-            font-size: 36px;
-            background-color: transparent;
+        .title{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            margin-left: 128px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 16px 0;
+            z-index: 1;
+
+            h3, h2{
+                color: white;
+                font-size: 32px;
+            }
+
+            h3{
+                font-weight: lighter;
+            }
         }
     }
 `

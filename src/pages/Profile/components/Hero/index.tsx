@@ -1,5 +1,6 @@
 import StylesHero from "./styles";
-import logo from "../../../image/logo.svg";
+import logo from "../../../../image/logo.svg";
+import massaItaliana from "../../../../image/massa-italiana.png";
 import { Link } from 'react-router-dom';
 
 const Hero = () => (
@@ -10,14 +11,14 @@ const Hero = () => (
                 <Link to="/">
                     <img id="logo" src={logo} alt="Logo" />
                 </Link>
-                <p>0 produto(s) no carrinho</p>
+                <h4>0 produto(s) no carrinho</h4>
             </div>
             <div className="header-bottom">
                 <div className="title">
                     <h3>Italiana</h3>
                     <h2>La Dolce Vita Trattoria</h2>
                 </div>
-                <img src="#" alt="" />
+                <img src={massaItaliana} alt="foto de uma massa italiana" />
             </div>
         </header>
     </StylesHero>
