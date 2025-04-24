@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import image from "../../../image/fundo.png"
+import image from "../../../../image/fundo.png"
 
 const StylesHero = styled.header`
     background-image: url(${image});

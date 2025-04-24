@@ -4,12 +4,22 @@ import { Link } from 'react-router-dom';
 
 const Hero = () => (
     <StylesHero>
-        <div className="heroContainer">
-            <Link to="/">
-                <img id="logo" src={logo} alt="Logo" />
-            </Link>
-            <span id="text">Viva experiências gatronomicas no conforto da sua casa</span>
-        </div>
+        <header>
+            <div className="header-top">
+                <h3>Restaurantes</h3>
+                <Link to="/">
+                    <img id="logo" src={logo} alt="Logo" />
+                </Link>
+                <p>0 produto(s) no carrinho</p>
+            </div>
+            <div className="header-bottom">
+                <div className="title">
+                    <h3>Italiana</h3>
+                    <h2>La Dolce Vita Trattoria</h2>
+                </div>
+                <img src="#" alt="" />
+            </div>
+        </header>
     </StylesHero>
 );
 
