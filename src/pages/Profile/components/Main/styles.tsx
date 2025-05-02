@@ -6,6 +6,7 @@ const MainStyles = styled.section`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 128px;
 `
 
 export default MainStyles

@@ -22,8 +22,8 @@ const Cards = () => (
             </div>
             <div className="description">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, incidunt exercitationem. Dolorum asperiores quia enim, veniam dolorem sit a obcaecati possimus libero cum dolore non,
-                    ipsa optio mollitia perspiciatis nobis?
+                    Peça já o melhor da culinária japonesa no conforto da sua casa! Sushis frescos, sashimis deliciosos e pratos quentes irresistíveis.
+                    Entrega rápida, embalagens cuidadosas e qualidade garantida.<br/>Experimente o Japão sem sair do lar com nosso delivery!
                 </p>
                 <Link to='/perfil'>Saiba mais</Link>
             </div>

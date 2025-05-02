@@ -14,6 +14,10 @@ export const GlobalStyles = createGlobalStyle`
         color: ${Cores.laranjaEscuro};
         font-family: 'Roboto';
     }
+
+    body {
+        overflow-x: hidden;
+    }
 `
 
 export { Cores } ;

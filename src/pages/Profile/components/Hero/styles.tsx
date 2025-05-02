@@ -13,7 +13,7 @@ const StylesHero = styled.header`
         height: 384px;
     }
 
-    header-top {
+    .header-top {
         background-image: url(${image});
         background-size: cover;  
         background-position: center;
@@ -25,7 +25,7 @@ const StylesHero = styled.header`
         height: 50px;
     }
 
-    border-bottom {
+    .header-bottom {
         height: 256px;
         position: relative;
 
