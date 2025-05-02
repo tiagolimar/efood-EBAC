@@ -1,6 +1,6 @@
 import StylesHero from "./styles";
 import logo from "../../../../image/logo.svg";
-import MassaItaliana from "../../../../image/massa-italiana.jpg"
+import MassaItaliana from "../../../../image/massa-italiana.png"
 import { Link } from 'react-router-dom';
 
 const Hero = () => (

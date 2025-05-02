@@ -5,7 +5,6 @@ const CardsStyles = styled.div`
   max-width: 472px;
   margin-bottom: 64px;
   border: 1px ${Cores.laranjaEscuro} solid;
-
   * {
     background-color: white;
   }
@@ -21,10 +20,6 @@ const CardsStyles = styled.div`
     background-color: transparent;
     right: 16px;
     top: 16px;
-  }
-  .massaItaliana {
-    width: 472px;
-    height: 217px;
   }
 
   .card-categories .categories {
@@ -52,10 +47,12 @@ const CardsStyles = styled.div`
         font-size: 18px;
       }
 
+      img {
+        width: 21px;
+      }
     }
   }
   .description {
-    height: 100%;
     display: flex;
     flex-direction: column;
     padding-left: 8px;
