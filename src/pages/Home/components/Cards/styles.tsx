@@ -5,6 +5,7 @@ const CardsStyles = styled.div`
   max-width: 472px;
   margin-bottom: 64px;
   border: 1px ${Cores.laranjaEscuro} solid;
+  background-color: white;
 
   * {
     background-color: white;
