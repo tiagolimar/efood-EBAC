@@ -4,6 +4,7 @@ import image from "../../../../image/fundo.png"
 const StylesHero = styled.header`
 
     width: 100%;
+    margin-bottom: 128px;
 
     * {
         background-color: transparent;
@@ -18,11 +19,28 @@ const StylesHero = styled.header`
         background-size: cover;  
         background-position: center;
         background-repeat: no-repeat;
-        display: flex;
-        justify-content: space-between;
         align-items: center;
-        padding: 64px 128px;
-        height: 50px;
+        height: 186px;
+
+        .header-container {
+            max-width: 1024px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+
+            div {
+                margin-top: 40px;
+                width: 33%;
+            }
+
+            #container-logo {
+                text-align: center;
+            }
+
+            #container-cart {
+                text-align: end;
+            }
+        }
     }
 
     .header-bottom {
@@ -31,16 +49,18 @@ const StylesHero = styled.header`
 
         img {
             width: 100%;
-            height: 100%;
+            height: 256px;
             object-fit: cover;
             filter: brightness(0.5);
         }
 
         .title {
             position: absolute;
-            width: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 1024px;
             height: 100%;
-            margin-left: 128px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;

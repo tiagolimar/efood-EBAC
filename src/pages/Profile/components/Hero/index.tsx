@@ -7,11 +7,20 @@ const Hero = () => (
     <StylesHero>
         <header>
             <div className="header-top">
-                <h3>Restaurantes</h3>
-                <Link to="/">
-                    <img id="logo" src={logo} alt="Logo" />
-                </Link>
-                <p>0 produto(s) no carrinho</p>
+                <div className="header-container">
+                    <div>
+                        <h3>Restaurantes</h3>
+                    </div>
+                    <div id="container-logo">
+                        <Link id="link-logo" to="/">
+                            <img id="logo" src={logo} alt="Logo" />
+                        </Link>
+                    </div>
+                    <div id="container-cart">
+                        <p>0 produto(s) no carrinho</p>
+                    </div>
+                </div>
+                
             </div>
             <div className="header-bottom">
                 <div className="title">
