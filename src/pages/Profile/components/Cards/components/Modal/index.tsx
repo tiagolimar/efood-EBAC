@@ -1,7 +1,8 @@
-import pizzaMargarita from "../../../../image/pizza-margarita.png"
+import pizzaMargarita from "../../../../../../image/pizza-margarita.png"
 import ModalStyles from "./styles"
+import close from "./img/close.svg"
 
-export default function Modal({isOpen}) {
+export default function Modal({isOpen, setIsOpen}) {
     if (isOpen) {
         return (
             <ModalStyles>
@@ -26,6 +27,9 @@ export default function Modal({isOpen}) {
                         <p className="text-botton">Serve de 2 a 3 pessoas</p>
 
                         <button>Adicionar ao carrinho - R$ 60,90</button>
+                    </div>
+                    <div className="div-close">
+                        <img src={close} height={16} alt="Botão para fechar" onClick={() => setIsOpen(!isOpen)} />
                     </div>
                 </div>
             </ModalStyles>

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Cores } from "../../../../globalStyles";
+import { Cores } from "../../../../../../globalStyles";
 
 const ModalStyles = styled.div`
     position: fixed;
@@ -7,10 +7,11 @@ const ModalStyles = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* tela escura */
+    background: rgba(0, 0, 0, 0.8);
     z-index: 1000;
     .modal {
         position: fixed;
+        width: 80vw;
         max-width: 1024px;
         top: 50%;
         left: 50%;
@@ -18,18 +19,18 @@ const ModalStyles = styled.div`
         background-color: ${Cores.laranjaEscuro};
         color: black;
         display: flex;
-        margin: auto;
-        border: 1px red solid;
         * {
             background-color: transparent;
             color: white;
         }
-        img {
-            margin: 32px;
-            width: 280px; 
-            height: 280px;
+        .div-image img {
+            padding: 16px 24px;
+            flex: 1;
+            display: flex;
+            justify-content: center;
         }
         .div-info {
+            flex: 2;
             h3 {
                 margin: 32px 0 16px;
             }
@@ -45,6 +46,16 @@ const ModalStyles = styled.div`
                 font-weight: 700;
                 font-size: 14px;
                 border: none;
+            }
+        }
+        .div-close {
+            padding-right: 8px;
+            padding-top: 8px;
+
+            img:hover {
+                cursor: pointer;
+                background-color: #ffffff30;
+                transition: 0.3s;
             }
         }
     }
