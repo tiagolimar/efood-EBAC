@@ -23,9 +23,10 @@ const CardsStyles = styled.div`
     right: 16px;
     top: 16px;
   }
-  .massaItaliana {
-    width: 472px;
+  .card-img {
+    width: 100%;
     height: 217px;
+    object-fit: cover;
   }
 
   .card-categories .categories {

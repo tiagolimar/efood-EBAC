@@ -5,7 +5,13 @@ const CardsStyles = styled.div`
     width: 320px;
     background-color: ${Cores.laranjaEscuro};
     margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
+    .card-top {
+        background-color: ${Cores.laranjaEscuro};
+    }
     .div-image {
         width: 304px;
         margin: 8px auto;
@@ -38,6 +44,12 @@ const CardsStyles = styled.div`
         font-weight: 700;
         border: none;
         margin-bottom: 8px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #fae2cd;
+            box-shadow: 0 0 5px rgba(0,0,0, 0.2);
+        }
     }
 
 `

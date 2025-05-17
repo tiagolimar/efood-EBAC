@@ -1,36 +1,33 @@
 import CardsStyles from "./styles";
-import MassaItaliana from "../../../../image/massa-italiana.png"
-import star from "../../../../image/estrela.svg"
+import star from "../../../../image/estrela.svg";
 import { Link } from "react-router-dom";
 
-const CardsPlus = () => (
+const Cards = ({ info }) => {
+  const { titulo, descricao, avaliacao, tipo, capa, id } = info;
+
+  return (
     <CardsStyles>
-        <div className="card">
-            <div className="card-categories">
-                <h4 className="categories">Italiana</h4>
-            </div>
-            <img className="massaItaliana" src={MassaItaliana} alt="" />
-            <div className="subtitle">
-                <h3>La Dolce Vita Trattoria</h3>
-                <div>
-                    <div id="nota">4.6</div>
-                    <div>
-                        <img src={star} alt="estrela" />
-                    </div>
-                </div>
-            </div>
-            <div className="description">
-                <p>
-                A La Dolce Vita Trattoria leva a autêntica cozinha italiana até você! Desfrute de massas caseiras, pizzas deliciosas e risotos incríveis, 
-                tudo no conforto do seu lar. Entrega rápida, 
-                pratos bem embalados e sabor inesquecível. Peça já!
-                </p>
-                <Link to='/perfil'>Saiba mais</Link>
-            </div>
+      <div className="card">
+        <div className="card-categories">
+          <h4 className="categories">{tipo}</h4>
         </div>
-
-        
+        <img className="card-img" src={capa} alt="" />
+        <div className="subtitle">
+          <h3>{titulo}</h3>
+          <div>
+            <div id="nota">{avaliacao}</div>
+            <div>
+              <img src={star} alt="estrela" />
+            </div>
+          </div>
+        </div>
+        <div className="description">
+          <p>{descricao}</p>
+          <Link to={`/perfil/${id}`}>Saiba mais</Link>
+        </div>
+      </div>
     </CardsStyles>
-)
+  );
+};
 
-export default CardsPlus
+export default Cards;

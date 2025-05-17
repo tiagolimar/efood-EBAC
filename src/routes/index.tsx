@@ -10,7 +10,7 @@ export function App() {
         <Routes>
             <Route path="/" element={<Layout />}>
                 <Route index element={<Home />} />
-                <Route path="/perfil" element={<Profile />} />
+                <Route path="/perfil/:id" element={<Profile />} />
             </Route>
         </Routes>
     </BrowserRouter>

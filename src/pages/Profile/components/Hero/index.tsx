@@ -1,9 +1,13 @@
 import StylesHero from "./styles";
 import logo from "../../../../image/logo.svg";
-import MassaItaliana from "../../../../image/massa-italiana.png"
 import { Link } from 'react-router-dom';
 
-const Hero = () => (
+type HeroProps = {
+    tipo:string;
+    titulo:string;
+    capa:string;
+}
+const Hero = ({tipo, titulo, capa} : HeroProps) => (
     <StylesHero>
         <header>
             <div className="header-top">
@@ -24,10 +28,10 @@ const Hero = () => (
             </div>
             <div className="header-bottom">
                 <div className="title">
-                    <h3>Italiana</h3>
-                    <h2>La Dolce Vita Trattoria</h2>
+                    <h3>{tipo}</h3>
+                    <h2>{titulo}</h2>
                 </div>
-                <img src={MassaItaliana} alt="foto de uma massa italiana" />
+                <img src={capa} alt="banner do restaurante" />
             </div>
         </header>
     </StylesHero>

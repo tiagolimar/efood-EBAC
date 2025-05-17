@@ -1,16 +1,15 @@
 import Cards from "../Cards";
 import MainStyles from "./styles";
 
-const Main = () => {
+
+const Main = ({ info }) => {
+    const {cardapio} = info;
     return(
             <>
         <MainStyles>
-            <Cards />
-            <Cards />
-            <Cards />
-            <Cards />
-            <Cards />
-            <Cards />
+            {cardapio.map((produto, key) =>(
+                <Cards info ={produto} key={key} />
+            ))}
         </MainStyles>
     </>
     )
