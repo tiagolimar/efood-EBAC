@@ -3,12 +3,13 @@ import star from "../../../../image/estrela.svg";
 import { Link } from "react-router-dom";
 
 const Cards = ({ info }) => {
-  const { titulo, descricao, avaliacao, tipo, capa, id } = info;
+  const { titulo, descricao, avaliacao, destacado, tipo, capa, id } = info;
 
   return (
     <CardsStyles>
       <div className="card">
         <div className="card-categories">
+          {destacado && <h4 className="categories">Destaque da semana</h4>}
           <h4 className="categories">{tipo}</h4>
         </div>
         <img className="card-img" src={capa} alt="" />

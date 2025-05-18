@@ -17,7 +17,9 @@ const CardsStyles = styled.div`
         margin: 8px auto;
         background-color: transparent;
         img {
-            max-width: 100%;
+            width: 304px;
+            height: 167px;
+            object-fit: cover;
         }
     }
 

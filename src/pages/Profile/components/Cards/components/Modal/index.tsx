@@ -15,7 +15,7 @@ export default function Modal({ info, isOpen, setIsOpen}) {
                         <p>{descricao}</p>
                         <p className="text-botton">{porcao}</p>
 
-                        <button>Adicionar ao carrinho - {preco.toLocalString('pt-br',{style:'currency', currency:'BRL'})}</button>
+                        <button>Adicionar ao carrinho - {preco.toLocaleString('pt-br',{style:'currency', currency:'BRL'})}</button>
                     </div>
                     <div className="div-close">
                         <img src={close} height={16} alt="Botão para fechar" onClick={() => setIsOpen(!isOpen)} />
