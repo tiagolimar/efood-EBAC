@@ -1,8 +1,13 @@
 import CardsStyles from "./styles";
 import Modal from "./components/Modal"
 import { useState } from "react";
+import { Produto } from "../../../../types/Produto";
 
-const Cards = ({ info }) => {
+type CardsProps = {
+    info: Produto;
+};
+
+const Cards = ({ info }: CardsProps) => {
     const { nome, descricao, foto } = info
     const [openModal, setOpenModal] = useState(false);
     return (
