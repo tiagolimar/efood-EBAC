@@ -1,3 +1,4 @@
+import { Restaurante } from "../../../../Types/Restaurante";
 import Cards from "../Cards"
 import MainStyles from "./style";
 import useSWR from "swr";
@@ -14,7 +15,7 @@ const Main = () => {
     return (
         <MainStyles>
             {
-                data.map((restaurante, key) =>(
+                data.map((restaurante : Restaurante, key:number) =>(
                     <Cards info={restaurante} key={key} />
                 ))
             }

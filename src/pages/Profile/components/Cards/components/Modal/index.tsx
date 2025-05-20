@@ -1,7 +1,14 @@
+import { Produto } from "../../../../../../Types/Produto";
 import ModalStyles from "./styles"
 import close from "./img/close.svg"
 
-export default function Modal({ info, isOpen, setIsOpen}) {
+type ModalProps = {
+    info: Produto;
+    isOpen: boolean;
+    setIsOpen: (isOpen: boolean) => void;
+};
+
+export default function Modal({ info, isOpen, setIsOpen}: ModalProps) {
     const { nome, descricao, foto, porcao, preco } = info;
     if (isOpen) {
         return (

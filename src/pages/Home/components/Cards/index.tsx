@@ -2,7 +2,21 @@ import CardsStyles from "./styles";
 import star from "../../../../image/estrela.svg";
 import { Link } from "react-router-dom";
 
-const Cards = ({ info }) => {
+interface CardInfo {
+  titulo: string;
+  descricao: string;
+  avaliacao: number;
+  destacado: boolean;
+  tipo: string;
+  capa: string;
+  id: number;
+}
+
+interface CardsProps {
+  info: CardInfo;
+}
+
+const Cards = ({ info }: CardsProps) => {
   const { titulo, descricao, avaliacao, destacado, tipo, capa, id } = info;
 
   return (
