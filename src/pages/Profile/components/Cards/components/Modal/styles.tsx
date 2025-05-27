@@ -24,6 +24,8 @@ const ModalStyles = styled.div`
             color: white;
         }
         .div-image img {
+            height: 280px;
+            width: 280px;
             padding: 16px 24px;
             flex: 1;
             display: flex;

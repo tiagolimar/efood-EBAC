@@ -11,13 +11,11 @@ type MainProps = {
 const Main = ({ info }:MainProps) => {
     const {cardapio} = info;
     return(
-            <>
-        <MainStyles>
-            {cardapio.map((produto : Produto, key:number) =>(
+    <MainStyles>
+        {cardapio.map((produto : Produto, key:number) =>(
                 <Cards info ={produto} key={key} />
-            ))}
-        </MainStyles>
-    </>
+        ))}
+    </MainStyles>
     )
 }
 
