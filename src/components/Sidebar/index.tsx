@@ -1,22 +1,30 @@
-import { useState } from "react";
 import StylesSidebar from "./Styles";
-import shoppingCart from "../../image/shopping-cart-svgrepo-com.svg";
+import close from "../../image/close.svg";
 import Card from "./components/Card";
+import type { RootState } from "../../store/store";
+import { useSelector } from "react-redux";
 
-const Sidebar = () => {
-    const [open, setOpen] = useState(true);
+type SidebarProps = {
+    open: boolean;
+    setOpen: (open: boolean) => void;
+};
+
+const Sidebar = ({ open, setOpen} : SidebarProps) => {
+    const produtos = useSelector((state: RootState) => state.cart.produtos);
 
     return (
         <StylesSidebar className={open ? "open" : ""}>
             <div className="offcanvas">
                 <div className="div-button" onClick={() => setOpen(!open)}>
-                    <img src={shoppingCart} alt="Carrinho" />
+                    <img src={close} alt="Carrinho" />
                 </div>
 
                 <div className="cards-product">
-                    <Card />
-                    <Card />
-                    <Card />
+                    {
+                        produtos.map((produto, key)=>(
+                            <Card key={key} produto={produto} />
+                        ))
+                    }
                 </div>
 
                 <div className="total">

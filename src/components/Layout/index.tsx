@@ -1,13 +1,17 @@
+import { useState } from "react";
 import { Outlet } from "react-router-dom";
 import Footer from "../Footer"
-import { GlobalStyles } from "../../globalStyles";
 import Sidebar from "../Sidebar";
+import Cart from "../Cart";
+import { GlobalStyles } from "../../globalStyles";
 
 function Layout() {
+    const [open, setOpen] = useState(false);
     return (
         <>
             <GlobalStyles />
-            <Sidebar />
+            <Cart setOpen={setOpen} />
+            <Sidebar open={open} setOpen={setOpen} />
             <Outlet />
             <Footer />
         </>

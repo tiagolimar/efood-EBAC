@@ -1,6 +1,6 @@
 import { Produto } from "../../../../../../Types/Produto";
 import ModalStyles from "./styles"
-import close from "./img/close.svg"
+import close from "../../../../../../image/close.svg"
 
 type ModalProps = {
     info: Produto;

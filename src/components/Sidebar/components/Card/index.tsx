@@ -2,7 +2,13 @@ import trash from './assests/lixeira-de-reciclagem.svg'
 import imgProduto from './assests/pizza-margarita.png';
 import StyleCard from './StyleCard';
 
-function Card() {
+import { Produto } from '../../../../Types/Produto';
+
+type CardProps = {
+    produto: Produto;
+}
+
+function Card( {produto} : CardProps ) {
     return (
         <StyleCard>
             <div className="card">
@@ -11,7 +17,7 @@ function Card() {
                 </div>
                 <div className="card-body">
                     <div className="card-info">
-                        <h4>Nome do Produto</h4>
+                        <h4>{produto.nome}</h4>
                         <p>R$ 00,00</p>
                     </div>
                     <button className="btn btn-primary">
